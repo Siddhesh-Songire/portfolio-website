@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react'
 import { Link, useLocation } from "react-router-dom";
 import "../styles/Navbar.css";
 import ReorderIcon from '@mui/icons-material/Reorder';
+import {Link as Scrolllink} from 'react-scroll'
 
 function Navbar() {
     const [expandNavbar, setExpandNavbar] = useState(false);
@@ -21,10 +22,11 @@ function Navbar() {
             }}> 
             <ReorderIcon/></button>
         </div>
-        <div className="links">
+        <div className="links" id="nav">
             <Link to="/"> Home </Link>
-            <Link to="/projects"> Projects </Link>
-            <Link to="/experience"> Experience </Link>
+            <Scrolllink  to="skills" spy={true} smooth={true}> Skills </Scrolllink>
+            <Link to="/projects"> Project </Link>
+            {/* <Link to="/experience"> Experience </Link> */}
         </div>
     </div>
   )
