@@ -1,7 +1,6 @@
 import React from 'react';
 import ProjectItem from '../components/ProjectItem';
 import "../styles/Project.css";
-import img1 from "../assets/img1.png";
 
 import { ProjectList } from "../helpers/ProjectList"
 
