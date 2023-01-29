@@ -25,7 +25,7 @@ function Navbar() {
         <div className="links" id="nav">
             <Link to="/"> Home </Link>
             <Scrolllink  to="skills" spy={true} smooth={true}> Skills </Scrolllink>
-            <Link to="/projects"> Project </Link>
+            <Link to="/projects"> Projects </Link>
             {/* <Link to="/experience"> Experience </Link> */}
         </div>
     </div>

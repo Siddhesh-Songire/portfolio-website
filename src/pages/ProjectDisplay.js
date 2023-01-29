@@ -2,6 +2,7 @@ import React from 'react'
 import { useParams } from 'react-router-dom'
 import { ProjectList } from '../helpers/ProjectList'
 import GitHubIcon from '@mui/icons-material/GitHub';
+import LanguageIcon from '@mui/icons-material/Language';
 import "../styles/ProjectDisplay.css"
 
 function ProjectDisplay() {
@@ -10,11 +11,14 @@ function ProjectDisplay() {
   return (
     <div className='project'>
       <h1> {project.name} </h1>
-      <img src={project.image} alt = "img"/>
+      <img src={project.image} alt = "img" />
       <p>
         <b>Skills:</b> {project.skills}
       </p>
+      <div>
       <a href={project.github} target= '_blank' rel="noopener noreferrer"> <GitHubIcon/> </a>
+      {project.website && <a href={project.website} target= '_blank' rel="noopener noreferrer"> <LanguageIcon/> </a>}
+      </div>
     </div>
   )
 }

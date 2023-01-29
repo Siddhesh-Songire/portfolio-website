@@ -26,3 +26,11 @@
     font-size: 60px;
     color: #3e497a;
   }
+
+  @media (min-width: 600px) {
+    body {
+      font-size: 1.2em; /* increase font size */
+    }
+  }
+  
+  
