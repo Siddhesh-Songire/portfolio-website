@@ -1,0 +1,32 @@
+/* ScrollToTopButton.css */
+.scroll-to-top-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999; /* Ensure the button is above other elements */
+  background-color: #ff0099;
+  border: none;
+  border-radius: 100%;
+  padding: 22px;
+  font-size: 25px;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s;
+  margin-right: 5px;
+}
+
+.scroll-to-top-button.visible {
+  opacity: 1;
+  visibility: visible;
+}
+.scroll-to-top-button:hover {
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2); /* Customize the shadow as needed */
+}
+
+@media screen and (max-width: 600px) {
+  .scroll-to-top-button {
+    padding: 8px; /* Adjust the padding for smaller size */
+    font-size: 16px; /* Adjust the font size for smaller size */
+  }
+}
