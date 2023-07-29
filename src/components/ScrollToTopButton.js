@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Link, animateScroll } from "react-scroll";
+import { animateScroll } from "react-scroll";
 import "../styles/Scroll.css";
 import KeyboardArrowUpRoundedIcon from "@mui/icons-material/KeyboardArrowUpRounded";
 
