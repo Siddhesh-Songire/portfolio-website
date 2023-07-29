@@ -1,81 +1,158 @@
 .home {
-    width: 100%;
-    align-items: center;
-    font-family: "Arial", sans-serif;
-    color: #3e497a;
-  }
-  
-  .about {
-    width: 100%;
-    height: calc(100vh - 100px);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background-color: #21325e;
-    color: #f0f0f0;
-  }
-  
+  width: 100%;
+  align-items: center;
+  font-family: "Arial", sans-serif;
+  color: #3e497a;
+}
+
+.about {
+  width: 100%;
+  height: calc(100vh - 100px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #21325e;
+  color: #f0f0f0;
+}
+
+.about h2 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 80px;
+  color: #e9d35b;
+  height: 50px;
+}
+
+.about .prompt {
+  width: 40%;
+  font-size: 30px;
+}
+.prompt svg {
+  font-size: 60px;
+  margin: 5px;
+  color: white;
+}
+
+.skills {
+  font-size: 35px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skills h1 {
+  color: #3e497a;
+}
+
+.skills .list {
+  list-style: none;
+  width: 60%;
+  text-align: left;
+}
+
+.list span {
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 600px) {
   .about h2 {
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 80px;
-    color: #e9d35b;
-    height: 50px;
+    font-size: 40px;
   }
-  
+
   .about .prompt {
-    width: 40%;
+    margin-top: 10px;
+    font-size: 20px;
+    width: 80%;
+  }
+
+  .skills {
+    text-align: center;
+  }
+  .list {
+    padding: 0;
+  }
+
+  .skills h2 {
     font-size: 30px;
   }
-  .prompt svg {
-    font-size: 60px;
-    margin: 5px;
-    color: white;
-  }
-  
-  .skills {
-    font-size: 35px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .skills h1 {
-    color: #3e497a;
-  }
-  
-  .skills .list {
-    list-style: none;
-    width: 60%;
-    text-align: left;
-  }
-  
-  .list span {
-    font-size: 20px;
-  }
-  
-  @media only screen and (max-width: 600px) {
-    .about h2 {
-      font-size: 40px;
-    }
-  
-    .about .prompt {
-      margin-top: 10px;
-      font-size: 20px;
-      width: 80%;
-    }
-  
-    .skills {
-      text-align: center;
-    }
-    .list {
-      padding: 0;
-    }
-  
-    .skills h2 {
-      font-size: 30px;
-    }
-  }
+}
+
+/* styles.css */
+.icons-image {
+  width: 50px; /* Set the width of the image */
+  height: 50px; /* Set the height of the image */
+  border-radius: 50%; /* Create a circular shape for the image (optional) */
+  transition: transform 0.3s ease; /* Add a transition effect on hover */
+  cursor: pointer;
+}
+
+.icons-image:hover {
+  transform: scale(1.2); /* Increase the scale of the image on hover */
+  /* Add any other hover effects you desire here */
+}
+
+/* contact form css */
+
+/* styles.css */
+.contact-container {
+  width: 100%;
+  height: 70vh;
+  background-color: #21325e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  width: 100%;
+}
+
+.contact-heading {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #ccd6f6;
+  border-bottom: 4px solid #ff0099;
+  color: #ccd6f6;
+}
+
+.contact-description {
+  color: #ccd6f6;
+  padding-top: 1rem;
+}
+
+.contact-input {
+  background-color: #ccd6f6;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.contact-textarea {
+  background-color: #ccd6f6;
+  padding: 0.5rem;
+}
+
+.contact-button {
+  color: #fff;
+  border: 2px solid #ff0099;
+  background-color: transparent;
+  padding: 1rem 2rem;
+  margin-top: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.contact-button:hover {
+  background-color: #ff0099;
+  border-color: #ff0099;
+}
