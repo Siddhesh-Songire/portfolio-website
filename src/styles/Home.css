@@ -13,7 +13,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-color: #21325e;
+  background-color: #0a192f;
   color: #f0f0f0;
 }
 
@@ -34,27 +34,40 @@
   color: white;
 }
 
+/* Styles for rounded pills */
 .skills {
-  font-size: 35px;
-  width: 100%;
   display: flex;
-  justify-content: center;
   flex-direction: column;
+  text-align: center;
+  height: 70vh;
   align-items: center;
+  justify-content: center;
 }
 
-.skills h1 {
-  color: #3e497a;
-}
-
-.skills .list {
+.list {
   list-style: none;
-  width: 60%;
-  text-align: left;
+  padding: 0;
 }
 
-.list span {
-  font-size: 20px;
+.item {
+  margin-bottom: 25px;
+}
+
+.pill {
+  display: inline-block;
+  background-color: #ff0099;
+  color: #fff;
+  padding: 5px 12px;
+  border-radius: 20px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  box-shadow: 6px 6px #5f7ead;
+}
+
+/* Optional hover effect */
+.pill:hover {
+  background-color: #0a192f;
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 600px) {
@@ -100,7 +113,7 @@
 .contact-container {
   width: 100%;
   height: 70vh;
-  background-color: #21325e;
+  background-color: #0a192f;
   display: flex;
   justify-content: center;
   align-items: center;

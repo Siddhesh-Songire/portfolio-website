@@ -55,30 +55,45 @@ function Home() {
       </div>
 
       <div className="skills">
-        <h1> Skills</h1>
-        <ol className="list">
+        <h1>Skills</h1>
+        <ul className="list">
           <li className="item">
-            <h2> Front-End</h2>
-            <span>ReactJS ,HTML, CSS, NPM, BootStrap, MaterialUI,</span>
+            <h2>Front-End</h2>
+            <div className="pill">ReactJS</div>
+            <div className="pill">HTML</div>
+            <div className="pill">CSS</div>
+            <div className="pill">NPM</div>
+            <div className="pill">Tailwind CSS</div>
+            <div className="pill">BootStrap</div>
+            <div className="pill">MaterialUI</div>
           </li>
           <li className="item">
             <h2>Back-End</h2>
-            <span>
-              NodeJS, ExpressJS, REST, MySQL, MongoDB, AWS EC2, Netlify, AWS S3,
-              MS SQL
-            </span>
+            <div className="pill">NodeJS</div>
+            <div className="pill">ExpressJS</div>
+            <div className="pill">REST</div>
+            <div className="pill">MySQL</div>
+            <div className="pill">MongoDB</div>
+            <div className="pill">AWS EC2</div>
+            <div className="pill">Netlify</div>
+            <div className="pill">AWS S3</div>
           </li>
           <li className="item">
             <h2>Languages</h2>
-            <span> C, C++, JavaScript, Java, Python, TypeScript</span>
+            <div className="pill">C</div>
+            <div className="pill">C++</div>
+            <div className="pill">JavaScript</div>
+            <div className="pill">Java</div>
+            <div className="pill">Python</div>
+            <div className="pill">TypeScript</div>
           </li>
-        </ol>
+        </ul>
       </div>
 
       <div className="contact-container">
         <form
           method="POST"
-          action="https://getform.io/f/a699a1b2-f225-434e-b317-1fbbde8e006c"
+          action="https://getform.io/f/3fa65934-6270-425f-b73d-47e1d85cc4a0"
           className="contact-form"
         >
           <div className="pb-8">
